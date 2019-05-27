@@ -37,7 +37,7 @@ def save(base64_image: str, filename: str):
         image_file.write(imgdata)
 
 
-def monitor_inference(inference_id: str, start_clock: float) -> Tuple(str, float):
+def monitor_inference(inference_id: str, start_clock: float) -> Tuple[str, float]:
     """Function to monitor an inference: waiting for the inference to be performed
     The code sends requests with field filtering (X-Fields) and, when the inference is finished,
     it sends a full requests to return the inferred_image_with_box.
